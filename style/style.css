@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+
+main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+#mainrecipe {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title {
+    font-family: 'Playfair Display';
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    left: -90px;
+}
+
+img[src="src/baseline_drag_indicator_black_24dp.png"] {
+    margin-right: 40px;
+}
+
+#description {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: italic;
+    color: #4F4F4F;
+    width: 592px;
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+    left: -60px;
+    line-height: 17px;
+}
+
+#cake {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+#point {
+    transform: rotate(90deg);
+    position: relative;
+}
+
+label {
+    cursor: pointer;
+}
+
+ion-icon[name="square"] {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ ion-icon[name="square"] {
+    display: flex;
+
+}
+
+input[type="checkbox"]:checked ~ ion-icon[name="square-outline"] {
+    display: none;
+}
+
+#inputgraham1, #inputgraham2, #inputgraham3, #inputcheese1, #inputcheese2, #inputcheese3, #inputcheese4, #inputcheese5, #inputcheese6, #inputcheese7 {
+    display: flex;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+ion-icon[name="square-outline"], ion-icon[name="square"] {
+    margin-right: 10px;
+}
+
+.soustitle {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.ingredient {
+    font-family: 'playfair display';
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 24px;
+    margin-top: 50px;
+}
+
+#graham {
+    color: #333333;
+    width:  600px;
+}
+
+#grahaminput:last-child {
+    margin-bottom: 20px;
+}
+
+#cheesecake {
+    width: 600px;
+}
+
+#instruction div {
+    display: flex;
+}
+
+.number {
+    background-color: #F2994A;
+    color: white;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+
+    font-family: 'Playfair display';
+    font-size: 24px;
+    font-weight: 700;
+   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 0px;
+}
+
+.instructiontexte {
+    font-family: 'Montserrat';
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+#source {
+    color: #BDBDBD;
+    font-size: 16px;
+    font-style: none;
+}
+
+footer {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+
+
+    color: #BDBDBD;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-top: 20px;
+}
+
+#lien {
+    text-decoration: underline;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#informationglobal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#boxtextinformation {
+    display: flex;
+    flex-direction: column;
+}
+
+#informationglobal {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px #C4C4C4;
+    border-radius: 10px;
+    padding: 15px;
+    max-height: 250px;
+    width: 130px;
+}
+
+
+
+#information div {
+    font-family: 'montserrat';
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+}
+
+ion-icon[name="time-outline"] {
+    color: #4F4F4F;
+}
+
+ion-icon[name="restaurant"] {
+    color: #F2994A;
+}
+
+#information ion-icon {
+    font-size: 24px;
+    margin-right: 14px;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+}
+
+#ion-iconinformation {
+    display: flex;
+    flex-direction: column;
+}
+
+#ion-iconinformation ion-icon {
+   margin-top: 30px;
+   position: relative;
+   top: -15px;
+}
+
+#last{
+    margin-top: 40px;
+}
+
+#servings {
+    color: #F2994A;
+}
+
+#information strong {
+    font-family: 'montserrat';
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    color: #BDBDBD;
+    text-transform: uppercase;
+}
+
+.soustitle {
+    margin-top: 40px;
+}
+
+@media (max-width: 400px) {
+    ion-icon[name="square"], ion-icon[name="square-outline"] {
+        font-size: 16px;
+    }
+
+    .soustitle {
+        font-size: 100px;
+    }
+
+    #cake {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #description {
+        font-size: 12px;
+    }
+
+
+}
